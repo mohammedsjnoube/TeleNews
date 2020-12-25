@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def today():
-	url = 'https://www.indiatoday.in/technology/news'
+	url = 'https://sana.sy/?page_id=743'
 	page = requests.get(url)
 
 	soup = BeautifulSoup(page.content, 'html.parser')

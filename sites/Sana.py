@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def ndtv():
-	url = 'https://gadgets.ndtv.com/news'
+	url = 'http://sana.sy/?cat=78367'
 	page = requests.get(url)
 	soup = BeautifulSoup(page.content, 'html.parser')
 	headings = soup.findAll(class_='news_listing')
